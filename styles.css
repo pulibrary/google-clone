@@ -43,10 +43,25 @@ a:hover {
     align-items: center;
 }
 
+#left-container > a:first-child {
+    margin-right: 20px;
+}
+
 #right-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 13px;
+}
+
+#right-container > a:first-child {
+    margin-right: 15px;
+}
+
+#right-container > svg {
+    fill: gray;
+    margin-left: 20px;
+    margin-right: 13px;
 }
 
 #profile {
@@ -61,19 +76,57 @@ a:hover {
 }
 
 #profile:hover {
+    cursor: pointer;
     box-shadow: 0 0.25px 0 0.5px gray,
-                0 0 0 4px rgb(61, 28, 28);
+                0 0 0 4px lightgray;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 92px;
+    width: 272px;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+#search-icon {
+    height: 20px;
+}
+
+#mic-icon {
+    height: 24px;
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     padding: 0 1.2rem;
 }
 
 footer a {
     display: inline-block;
     padding: 15px;
+    color: #70757a;
+}
+
+#leaf {
+    height: 14px;
+    margin-right: 6px;
 }
