@@ -41,20 +41,40 @@
             <!-- Google Logo -->
             <img id="logo" src="images/logo.png" alt="Google logo" />
 
-            <!-- Search Bar -->
-            <div id="search-bar">
-                <img id="search-icon" src="images/magnifying-glass.svg" alt="Magnifying glass" />
-                <div id="search-input">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" name="search" />
+            <!-- Search -->
+            <form>
+                <!-- Search Bar -->
+                <div id="search-bar">
+                    <img id="search-icon" src="images/magnifying-glass.svg" alt="Magnifying glass" />
+                    <div id="search-input">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="search" />
+                    </div>
+                    <img id="mic-icon" src="images/mic.png" alt="Colorful microphone" />
                 </div>
-                <img id="mic-icon" src="images/mic.png" alt="Colorful microphone" />
-            </div>
-
-            <!-- Buttons Below Bar -->
-            <div>
-
-            </div>
+    
+                <!-- Buttons Below Bar -->
+                <div id="buttons">
+                    <div class="button">
+                        <label for="submit">Submit:</label>
+                        <input 
+                            type="submit" 
+                            id="submit" 
+                            name="submit" 
+                            value="Google Search" 
+                        />
+                    </div>
+                    <div class="button">
+                        <label for="random-search">Random Search:</label>
+                        <input 
+                            type="submit" 
+                            id="random-search" 
+                            name="random-search" 
+                            value="I'm Feeling Lucky"
+                        />
+                    </div>
+                </div>
+            </form>
 
             <!-- Info Below Bar -->
             <div>
