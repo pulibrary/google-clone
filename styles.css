@@ -1,7 +1,3 @@
-/* TODO: 
-   - add tooltips (Search by voice, Google apps, Google Account) 
-*/
-
 body {
     margin: 0;
     font-size: 14px;
@@ -84,25 +80,32 @@ a:hover {
 }
 
 .tooltip {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: #555;
-  color: white;
-  text-align: center;
-  font-size: 11.5px;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  padding: 4px 8px;
-  position: absolute;
-  z-index: 1;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+    visibility: hidden;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    font-size: 11.5px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+.tooltip .apps-tooltiptext {
+    width: 80px;
+    padding: 4px 6px;
+    top: 110%;
+    left: 86%;
 }
 
 .tooltip .profile-tooltiptext {
@@ -117,32 +120,39 @@ a:hover {
     right: -10px;
 }
 
-.tooltip .apps-tooltiptext {
-    width: 80px;
-    padding: 4px 6px;
-    top: 110%;
-    left: 86%;
-}
-
 .tooltip span::first-line {
     color: white;
 }
 
-/* .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  right: 22px;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #555 transparent;
-} */
+.tooltip .mic-tooltiptext {
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 0;
+    border: 1px solid white;
+    box-shadow: 0 1px 4px rgb(32, 33, 36, 20%);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding: 7px 7px 5px 7px;
+    top: 185%;
+    left: 90%;
+}
+
+.tooltip .mic-tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 44%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
 
 .tooltip:hover .tooltiptext,
-.tooltip:focus .tooltiptext  {
-  visibility: visible;
-  opacity: 1;
+.tooltip:focus-visible .tooltiptext  {
+    visibility: visible;
+    opacity: 1;
 }
 
 #main {
@@ -227,6 +237,10 @@ label {
     cursor: pointer;
 }
 
+#mic-icon img {
+    height: 100%;
+}
+
 #buttons {
     display: flex;
     flex-direction: row;
@@ -246,7 +260,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    box-shadow: 0 0 2px 0.5px lightgray;
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+    border: 1px solid #dadce0;
 }
 
 input[type="submit"]:focus, 
