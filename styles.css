@@ -46,16 +46,21 @@ a:hover {
     margin-right: 15px;
 }
 
-#right-nav > svg {
-    fill: #5f6368;
-    margin-left: 19.5px;
+#apps-icon {
+    margin-left: 20px;
     margin-right: 13px;
     height: 24px;
     width: 24px;
     padding: 7px;
 }
 
-#right-nav > svg:hover {
+#apps-icon svg {
+    fill: #5f6368;
+    height: 100%;
+    width: 100%;
+}
+
+#apps-icon:hover {
     cursor: pointer;
     background-color: rgba(60,64,67,0.08);
     border-radius: 50%;
@@ -76,6 +81,75 @@ a:hover {
     cursor: pointer;
     box-shadow: 0 1px 0 rgb(0, 0, 0, 15%),
                 0 0 0 4px rgba(60,64,67,0.08);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  font-size: 11.5px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  right: -10px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .profile-tooltiptext {
+    color: lightgray;
+    text-align: left;
+    font-size: 11.5px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    top: 125%;
+    right: -10px;
+}
+
+.tooltip .apps-tooltiptext {
+    width: 141px;
+    color: lightgray;
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    top: 125%;
+    right: -10px;
+}
+
+.tooltip span::first-line {
+    color: white;
+}
+
+/* .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 22px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+} */
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext  {
+  visibility: visible;
+  opacity: 1;
 }
 
 #main {
@@ -245,7 +319,7 @@ footer > div:last-child {
     #main {
         height: calc(100vh - 60px - 93px);
     }
-    
+
     footer {
         justify-content: space-evenly;
         flex-wrap: wrap;
