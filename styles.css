@@ -2,11 +2,11 @@
 
 * {
     font-family: Arial, sans-serif;
-    font-size: 14px;
 }
 
 body {
     margin: 0;
+    font-size: 14px;
 }
 
 a {
@@ -259,6 +259,7 @@ form {
 
 input[type="submit"] {
     cursor: pointer;
+    font-size: 14px;
     padding: 9px 17px;
     margin: 5px;
     border: 1px solid #f8f9fa;
