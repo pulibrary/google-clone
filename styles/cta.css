@@ -1,0 +1,16 @@
+/* Below Search Bar CTA */
+
+#below-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#below-bar img {
+    margin-right: 5px;
+}
+
+#below-bar a {
+    font-size: small;
+    color: #1a0dab;
+}

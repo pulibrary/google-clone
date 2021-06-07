@@ -1,0 +1,40 @@
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+}
+
+footer a {
+    display: inline-block;
+    padding: 15px;
+    color: #70757a;
+}
+
+footer a:last-child {
+    padding-right: 15px;
+}
+
+#leaf {
+    height: 14px;
+    margin-right: 6px;
+}
+
+footer > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 30%;
+}
+
+footer > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+footer > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 30%;
+}
